@@ -2,7 +2,7 @@
     <div>
         <h1>問題</h1>
         <!-- ここで問題を表示 -->
-        <button @click="submitName">終了</button>
+        <button @click="submitName">終了ああああ</button>
     </div>
 </template>
 
@@ -27,7 +27,8 @@ const submitName = async () => {
         }
 
         alert('名前が登録されました');
-        // 必要に応じて他のページへの遷移など
+        // 結果表示ページへ遷移
+        router.push('/results');
     } catch (error) {
         console.error('エラーが発生しました:', error);
         alert('エラーが発生しました');
